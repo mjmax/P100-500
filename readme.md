@@ -13,12 +13,12 @@ A modified version of feed forward neural network architecture is proposed to ov
 
 
 # Block Diagram (Sub NN)
-[Click here](assets/block_diagram_subnn.png)
+![Diagram](assets/block_diagram_subnn.png)
 
 Proposed neural network has 26 sub neural networks. Each sub network is trained to identify a single character. Each sub network have two hidden layers and single output. The output will give more than 0.5 if the input vector is related to corresponding letter. This method will be helpful to mitigate the errors while implementing and hopefully reduce the effect of local minima. Each input neurons of the sub net is connected to all 625 weights.
 
 # Pixcel Map
 According to the following figure, the input vector to the neural network consists of 625 elements. Each element of the input vector is a element of 2D array which maps the gray scale value of the handwritten character. Handwritten characters are first mapped to  gray scale and then divided to 25x25 pixels. Each element of this 2D array will then map between 0 and 255 according to the intensity of each pixel.
 
-[Click here](assets/pixel_map.png)
+![Diagram](assets/pixel_map.png)
 
