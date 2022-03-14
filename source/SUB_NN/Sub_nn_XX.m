@@ -40,3 +40,4 @@ Do = zeros(Uo, Lo);                     % Back Propergation error for the output
 dWi = zeros((Uh - 1), Ui);               % Input to first hidden layer partial derivative matrix
 dWh = zeros(Uh, (Uh - 1), (Lh - 1));     % Hidden layer to hidden layer partial derivative matrix
 dWo = zeros(Uh, Uo);                     % Hidden layer to output layer partial derivative matrix
+
